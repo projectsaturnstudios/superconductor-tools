@@ -1,0 +1,37 @@
+{
+    "name": "superconductor/tools",
+    "description": "MCP Server package for Superconductor",
+    "type": "library",
+    "version": "20241105.1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Project Saturn Studios, LLC",
+            "email": "info@prejectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "projectsaturnstudios/superconductor-core": "^20241105.1.0"
+    },
+    "require-dev": {},
+    "autoload":{
+        "psr-4": {
+            "MCP\\Capabilities\\Tools\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "autoload-dev":{
+        "psr-4": {}
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MCP\\Capabilities\\Tools\\Providers\\ToolCapabilityProvider"
+            ]
+        }
+    }
+}
