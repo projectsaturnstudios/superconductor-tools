@@ -23,7 +23,7 @@ class CallToolProcedure extends RpcProcedure
             $request->toJsonRpc()
         );
         $results = $tools[$tool]->execute($request->getArguments());
-        logger()->log('info', 'Tool called: ' . $tool, $results);
+
         return new RpcResult($request->id,[
             'content' => $results
         ]);

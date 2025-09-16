@@ -2,7 +2,7 @@
     "name": "superconductor/tools",
     "description": "MCP Tool Management package for Superconductor",
     "type": "library",
-    "version": "20241105.5.0",
+    "version": "20241105.5.1",
     "license": "MIT",
     "authors": [
         {
